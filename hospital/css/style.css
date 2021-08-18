@@ -438,3 +438,39 @@ p {
 #main-footer.changeColor {
   background-color: #ad0718;
 }
+
+#report-table {
+  overflow-y: auto;
+  height: 450px;
+}
+#report-table h2 {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #0c2461;
+  color: white;
+}
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
