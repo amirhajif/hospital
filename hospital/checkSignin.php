@@ -2,7 +2,6 @@
 session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
-$password=base64_encode($password);
 if ($username=="admin" && $password=="admin")
 {
     $_SESSION['username']=$username;
@@ -16,6 +15,7 @@ try {
 } catch (Exception $exception) {
     echo $exception;
 }
+$password=base64_encode($password);
 $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 $result = mysqli_query($link, $query);
 if (mysqli_num_rows($result)!=0)

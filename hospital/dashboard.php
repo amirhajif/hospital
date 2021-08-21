@@ -76,7 +76,7 @@ try {
             <th>ردیف</th>
           </tr>
             <?php
-            $query="SELECT * FROM reservation";
+            $query="SELECT * FROM reservation ORDER BY date  ASC , time ASC";
             $result=mysqli_query($link,$query);
             $counter=1;
             foreach($result as $reserve) {
