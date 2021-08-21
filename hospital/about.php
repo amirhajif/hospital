@@ -34,31 +34,52 @@ session_start();
               ></a>
                     </li>
                     <li>
-                        <a href="signup-login.php">
+                        <a
                             <?php
-                            if (isset($_SESSION['isLogin']))
+                            if (isset($_SESSION['admin']))
                             {
-                                if ($_SESSION['isLogin'])
-                                {?>
-                                    رزرو تایم
-                                    <?php
-                                }
-                                else
-                                {
-                                    ?>
-                                    ورود/ثبت نام
-                                    <?php
+                                ?>
+                                href="dashboard.php"
+                                <?php
 
-                                }
+                            }
+                            else if (isset($_SESSION['isLogin']))
+                            {
+                                ?>
+                                href="contact.php"
+                                <?php
+                            }
+                            else
+                            {
+                                ?>
+                                href="signup-login.php"
+                                <?php
+
+                            }
+                            ?>
+                        >
+                            <?php
+                            if (isset($_SESSION['admin']))
+                            {
+                                ?>
+                                پنل مدیریت
+                                <?php
+
+                            }
+                            else if (isset($_SESSION['isLogin']))
+                            {
+                                ?>
+                                رزرو تایم
+                                <?php
                             }
                             else
                             {
                                 ?>
                                 ورود/ثبت نام
                                 <?php
+
                             }
                             ?>
-
                             <i class="fas fa-user-alt"></i
               ></a>
                     </li>

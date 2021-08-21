@@ -81,7 +81,7 @@ if (isset($_SESSION['reservated']))
                         <i class="fas fa-user-alt"></i></a>
                 </li>
                 <li>
-                    <a  onclick="logout()"> خروج از حساب <i class="fas fa-sign-out-alt"></i></a>
+                    <a  onclick="logout()" style="cursor: pointer"> خروج از حساب <i class="fas fa-sign-out-alt"></i></a>
                 </li>
             </ul>
         </div>

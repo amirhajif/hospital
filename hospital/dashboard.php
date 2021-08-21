@@ -1,3 +1,16 @@
+<?php
+session_start();
+if (isset($_SESSION['firstTimeAdmin']))
+{
+    unset($_SESSION['firstTimeAdmin']);
+    echo '<script>window.alert("ادمین خوش آمدی")</script>';
+}
+try {
+    $link = mysqli_connect("localhost", "root", "", "hospital");
+} catch (Exception $exception) {
+    echo $exception;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +27,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Hospital.ir | Reservation</title>
+      <script src="logout.js"></script>
   </head>
 
   <body>
@@ -35,13 +49,15 @@
               ></a>
             </li>
             <li>
-              <a href="signup-login.php">
-                خوش امدید <bdi> "اسم ادمین" </bdi
+              <a
+                      href="dashboard.php"
+              >
+                خوش امدید <bdi> مدیر سایت </bdi
                 ><i class="fas fa-user-alt"></i>
               </a>
             </li>
             <li>
-              <a href=""> خروج از حساب <i class="fas fa-sign-out-alt"></i> </a>
+              <a onclick="logout()" style="cursor: pointer"> خروج از حساب <i class="fas fa-sign-out-alt"></i> </a>
             </li>
           </ul>
         </div>
@@ -58,25 +74,22 @@
             <th>نام</th>
             <th>ردیف</th>
           </tr>
+            <?php
+            $query="SELECT * FROM reservation";
+            $result=mysqli_query($link,$query);
+            $counter=0;
+            foreach($result as $reserve) {
+                echo "
+          <tr>
+            <td>$reserve[date]</td>
+            <td>$reserve[type]</td>
+            <td>$reserve[name]</td>
+            <td>$counter</td>
+          </tr>";
+                $counter++;
+          }
+          ?>
 
-          <tr>
-            <td>1400/1/1</td>
-            <td>نوع ویزیت</td>
-            <td>نام</td>
-            <td>ردیف</td>
-          </tr>
-          <tr>
-            <td>1400/1/1</td>
-            <td>نوع ویزیت</td>
-            <td>نام</td>
-            <td>ردیف</td>
-          </tr>
-          <tr>
-            <td>1400/1/1</td>
-            <td>نوع ویزیت</td>
-            <td>نام</td>
-            <td>ردیف</td>
-          </tr>
         </table>
       </div>
     </section>

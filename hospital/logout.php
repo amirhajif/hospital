@@ -1,6 +1,5 @@
 <?php
 session_start();
-unset($_SESSION['isLogin']);
-unset($_SESSION['username']);
+session_destroy();
 header("Location: http://localhost/hospital/hospital/index.php");
 ?>
