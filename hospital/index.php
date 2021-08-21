@@ -17,6 +17,7 @@ if (isset($_SESSION['reservationFinish']))
     <meta name="keywords" content="HTML ,CSS, PHP, developer" />
     <script src="https://kit.fontawesome.com/e95a8ce8bc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">
 
     <title>Hospital.ir | Main</title>
 </head>

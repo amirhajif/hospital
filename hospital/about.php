@@ -12,6 +12,7 @@ session_start();
     <meta name="keywords" content="HTML ,CSS, PHP, developer" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">    
     <title>Hospital.ir | About</title>
 </head>
 
@@ -115,7 +116,7 @@ session_start();
         <div class="container">
             <h2 class="l-heading">اسامی پزشکان و کادر درمانی</h2>
             <div class="testimonial bg-primary">
-                <img src="./img/person-1.jpg" alt="doc1" />
+                <img src="./img/person-1.jpg"alt="doc1" />
                 <p>
                     پزشک اصلی آقای دکتر و ..... بوده و از دستیاران اصلی ایشون میتوان به دکتر .... و دکتر ..... و همچنین از متخصصین بخش بیهوشی استاد ..... اشاره کرد
                 </p>

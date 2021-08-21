@@ -31,6 +31,7 @@ if (isset($_SESSION['reservated']))
             crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">    
     <title>Hospital.ir | Reservation</title>
     <script src="logout.js"></script>
 </head>
