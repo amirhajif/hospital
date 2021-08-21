@@ -2,11 +2,8 @@
 session_start();
 if (isset($_SESSION['reservationFinish']))
 {
-    if ($_SESSION['reservationFinish'])
-    {
         unset($_SESSION['reservationFinish']);
         echo '<script>window.alert("رزرو با موفقیت انجام شد")</script>';
-    }
 }
 ?>
 <!DOCTYPE html>

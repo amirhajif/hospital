@@ -4,7 +4,7 @@ if (isset($_SESSION['isLogin']))
 {
     if ($_SESSION['isLogin']==true)
     {
-        header("Location: http://localhost/hospital%20-%20new/hospital/contact.php");
+        header("Location: http://localhost/hospital/hospital/contact.php");
     }
 }
 if (isset($_SESSION['failSignin']))

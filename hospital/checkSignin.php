@@ -14,13 +14,13 @@ if (mysqli_num_rows($result)!=0)
     $_SESSION['username']=$username;
     $_SESSION['isLogin']=true;
     $_SESSION['firstTime']=true;
-    header("Location: http://localhost/hospital%20-%20new/hospital/contact.php");
+    header("Location: http://localhost/hospital/hospital/contact.php");
 
 }
 else
 {
     $_SESSION['failSignin']=true;
-    header("Location: http://localhost/hospital%20-%20new/hospital/signup-login.php");
+    header("Location: http://localhost/hospital/hospital/signup-login.php");
 }
 
 ?>
