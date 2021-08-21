@@ -69,6 +69,7 @@ try {
         <h2>گزارش رزورها <i class="fas fa-chart-pie"></i></h2>
         <table>
           <tr>
+            <th>ساعت</th>
             <th>تاریخ</th>
             <th>نوع ویزیت</th>
             <th>نام</th>
@@ -77,10 +78,11 @@ try {
             <?php
             $query="SELECT * FROM reservation";
             $result=mysqli_query($link,$query);
-            $counter=0;
+            $counter=1;
             foreach($result as $reserve) {
                 echo "
           <tr>
+            <td>$reserve[time]</td>
             <td>$reserve[date]</td>
             <td>$reserve[type]</td>
             <td>$reserve[name]</td>

@@ -2,6 +2,7 @@
 session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
+$password=base64_encode($password);
 if ($username=="admin" && $password=="admin")
 {
     $_SESSION['username']=$username;

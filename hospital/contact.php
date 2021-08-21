@@ -113,11 +113,11 @@ if (isset($_SESSION['reservated']))
                 <label for="time">تایم</label>
                 <select name="time" required>
                     <option selected value="" disabled>-- تایم ویزیت --</option>
-                    <option value="16">16 - 16,30</option>
-                    <option value="16.40">16,40 - 17,10</option>
-                    <option value="17.20">17,20 - 17,50</option>
-                    <option value="18">18 - 18,30</option>
-                    <option value="18.30">18,30 - 19</option>
+                    <option value="16 - 16,30">16 - 16,30</option>
+                    <option value="16,40 - 17,10">16,40 - 17,10</option>
+                    <option value="17,20 - 17,50">17,20 - 17,50</option>
+                    <option value="18 - 18,30">18 - 18,30</option>
+                    <option value="18,30 - 19">18,30 - 19</option>
                 </select>
             </div>
             <div class="form-group">

@@ -2,6 +2,7 @@
 session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
+$password=base64_encode($password);
 $email = $_POST['email'];
 try {
     $link = mysqli_connect("localhost", "root", "", "hospital");
