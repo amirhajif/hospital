@@ -22,8 +22,8 @@ if (isset($_SESSION['reservated']))
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Welcome to the First Site" />
-    <meta name="keywords" content="HTML ,CSS, PHP, developer" />
+    <meta name="description" content="دندان پزشکی شهید رجایی" />
+    <meta name="keywords" content="dentist,doctor,دندان پزشکی,شهید رجایی" />
     <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
